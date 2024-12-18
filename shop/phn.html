@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Link to Google Fonts - Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Link to Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="icon/icons8-products-50.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <!-- Link to custom CSS stylesheet for additional styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title of the webpage -->
+    <title>DigiShop Products</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid mx-2">
+        <a class="navbar-brand fs-3" href="#">DigiShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-6" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="Products.html">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="SpecialOffers.html">Special Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="OurSerices.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="AboutUs.html">About Us</a>
+                </li>
+            </ul>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <span class="userNameIn"><strong></strong></span>
+
+                <a href="FavoriteProducts.html" class="text-dark favProducts">
+                    <i class="fas fa-bookmark"></i>
+                </a>
+
+     
+
+                <div class="cart-container position-relative">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="cart btn">
+                        View Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row my-4">
+        <div class="col-12">
+<div class="banner text-center bg-dark text-white p-4 rounded">
+    <h5 class="banner-title" style="font-size: 1.75rem;">----- Discover Exclusive Offers! ------</h5>
+    <p class="banner-text" style="font-size: 1.2rem;">
+        Don’t miss the chance to get the best limited-time offers on the latest products. Shop now and seize the
+        opportunity!
+    </p>
+    <a href="SpecialOffers.html" class="btn btn-light text-dark">Shop Offers</a>
+</div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-lg-6 mb-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Choose a category</option>
+                <option value="Name">Name</option>
+                <option value="Category">Category</option>
+            </select>
+        </div>
+        <div class="col-lg-6 mb-3">
+            <input type="text" class="form-control search-bar" placeholder="Search for products..." aria-label="Search">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row Products-Row">
+        
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/redmiphn.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">REDMI</h5>
+                <p class="card-text">Latest model with advanced features.</p>
+                <p class="card-text"><strong>$18120</strong></p>
+                <a href="#" class="btn btn-primary">Add Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/realme.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">REALME</h5>
+                <p class="card-text">Latest model with advanced features.</p>
+                <p class="card-text"><strong>$25000</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/samsung.jpeg"class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">SAMSUNG</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong>$95000</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/moto.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">LENOVA</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong> $16871</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/vivo.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">VIVO</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong> $29871</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/apple.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">iPhone 14 Pro</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong> $93871</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/nokia.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">NOKIA</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong> $23871</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/one.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">ONEPLUS</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong> $53871</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="images/google.jpeg" class="product-img" alt="Product Image">
+            <div class="card-body">
+                <h5 class="card-title">GOOGLE</h5>
+                <p class="card-text">High-performance  for work and gaming.</p>
+                <p class="card-text"><strong> $43871</strong></p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+</div>
+<div class="container d-flex align-items-center justify-content-center py-5">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Products.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="SpecialOffers.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="OurSerices.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="AboutUs.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="ComplaintsPage.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="Support.html">6</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="productsCart">
+            <!-- Products will be injected here -->
+        </div>
+        <div class="d-grid gap-2 btn-center my-2">
+            <a href="view.html" class="btn btn-primary" type="button">View Products</a>
+            <button class="btn btn-danger" type="button" id="deleteAllBtn">Delete All</button>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white p-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">About Us</h5>
+                <p class="mb-0">At DigiShop, we are committed to delivering a diverse range of quality products
+                    at competitive prices. Our goal is to ensure customer satisfaction and provide exceptional service.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white fs-6">Home</a></li>
+                    <li><a href="Products.html" class="text-white fs-6">Our Products</a></li>
+                    <li><a href="AboutUs.html" class="text-white fs-6">About Us</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">File a Complaint</a></li>
+                    <li><a href="Support.html" class="text-white fs-6">Customer Support</a></li>
+                    <li><a href="SpecialOffers.html" class="text-white fs-6">Exclusive Offers</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>If you have any inquiries or feedback, we are here to assist you!</p>
+                <p>Email: <a href="mailto:info@DigiShop.com" class="text-white">info@DigiShop.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h5 class="text-uppercase">Need Assistance?</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="Support.html" class="text-white fs-6">Contact Customer Support</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">Submit a Complaint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons mb-4 text-center">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="my-4 border-light">
+        <p class="text-center mb-0">&copy; 2024 DigiShop. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800, 
+        easing: 'ease-in-out',
+        delay: 100,
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const cartContainer = document.querySelector(".productsCart");
+    const cartBadge = document.querySelector(".cart .badge");
+    const deleteAllBtn = document.getElementById("deleteAllBtn");
+
+    // Simulate a cart (you can replace this with a more advanced cart system or fetch it from a backend).
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add event listeners to "Add to Cart" buttons
+    document.querySelectorAll(".btn-primary").forEach((button, index) => {
+        button.addEventListener("click", () => {
+            const productCard = button.closest(".card");
+            const productName = productCard.querySelector(".card-title").textContent;
+            const productPrice = productCard.querySelector("strong").textContent;
+            const productImage = productCard.querySelector(".product-img").src;
+
+            // Add product to cart array
+            cart.push({ name: productName, price: productPrice, image: productImage });
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartView();
+            alert(`${productName} has been added to the cart!`);
+        });
+    });
+
+    // Display the cart content in the offcanvas
+    function updateCartView() {
+        cartContainer.innerHTML = "";
+        cart.forEach((product, index) => {
+            const productElement = document.createElement("div");
+            productElement.classList.add("cart-item", "d-flex", "align-items-center", "mb-3");
+            productElement.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="me-3" style="width: 50px; height: 50px; object-fit: cover;">
+                <div class="flex-grow-1">
+                    <h6 class="mb-0">${product.name}</h6>
+                    <small class="text-muted">${product.price}</small>
+                </div>
+                <button class="btn btn-danger btn-sm remove-btn" data-index="${index}">Remove</button>
+            `;
+            cartContainer.appendChild(productElement);
+        });
+
+        // Update cart badge
+        cartBadge.textContent = cart.length;
+
+        // Add event listeners to remove buttons
+        document.querySelectorAll(".remove-btn").forEach((button) => {
+            button.addEventListener("click", () => {
+                const index = button.getAttribute("data-index");
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                updateCartView();
+            });
+        });
+    }
+
+    // Clear all cart items
+    deleteAllBtn.addEventListener("click", () => {
+        if (confirm("Are you sure you want to delete all items from the cart?")) {
+            cart = [];
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartView();
+        }
+    });
+
+    // Initial cart view update
+    updateCartView();
+});
+
+</script>
+    <!-- Link to the main JavaScript file for interactivity -->
+    <script src="js/products.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specify the character encoding for the HTML document -->
+
+    <!-- Set the viewport to make the website responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link to Bootstrap JS bundle (includes Popper.js) for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Link to Google Fonts - Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Link to Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="icon/icons8-home-26.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link to custom CSS stylesheet for additional styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title of the webpage -->
+    <title>Our Services</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid mx-2">
+        <a class="navbar-brand fs-3" href="#">DigiShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-6" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="Products.html">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="SpecialOffers.html">Special Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="OurSerices.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="AboutUs.html">About Us</a>
+                </li>
+            </ul>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <span class="userNameIn fw-bold"></span>
+
+                <a href="FavoriteProducts.html" class="text-white  favProducts btn btn-danger">
+                    <i class="far fa-heart"></i>
+                </a>
+
+                <a class="btn btn-outline-dark btn-sm logInBtn" href="Login.html">Login</a>
+                <a class="btn btn-outline-dark btn-sm signInBtn" href="SignUp.html">Sign Up</a>
+
+                <a class="btn btn-outline-danger btn-sm logOutBtn" href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+
+                <div class="cart-container position-relative">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="cart btn">
+                        View Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<div class="container my-4">
+    <div class="container text-white bg-dark p-3 rounded">
+        <h1 class="mb-4 text-center">Our Services</h1>
+        <p class="text-center">At DigiShop, we offer a range of services designed to meet your needs:</p>
+    </div>
+
+    <div class="row my-4">
+        <div class="col-md-4">
+            <div class="card service-card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-box service-icon mb-3" style="font-size: 2rem;"></i>
+                    <h5 class="card-title">Product Sourcing</h5>
+                    <p class="card-text">We help you find the best products from reliable suppliers at competitive
+                        prices.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card service-card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-truck service-icon mb-3" style="font-size: 2rem;"></i>
+                    <h5 class="card-title">Logistics Management</h5>
+                    <p class="card-text">Our logistics team ensures timely delivery of your products to your doorstep.
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card service-card mb-4">
+                <div class="card-body">
+                    <i class="fas fa-headset service-icon mb-3" style="font-size: 2rem;"></i>
+                    <h5 class="card-title">Customer Support</h5>
+                    <p class="card-text">We offer 24/7 customer support to assist you with any inquiries or issues.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
+                            aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center my-3">
+        <a href="Support.html" class="btn btn-primary">Contact Us for More Info</a>
+    </div>
+</div>
+<div class="container d-flex align-items-center justify-content-center py-5">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Products.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="SpecialOffers.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="OurSerices.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="AboutUs.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="ComplaintsPage.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="Support.html">6</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="productsCart">
+            <!-- Products will be injected here -->
+        </div>
+        <div class="d-grid gap-2 btn-center my-2">
+            <a href="Cart.html" class="btn btn-primary" type="button">View Products</a>
+            <button class="btn btn-danger" type="button" id="deleteAllBtn">Delete All</button>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white p-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">About Us</h5>
+                <p class="mb-0">At DigiShop, we are committed to delivering a diverse range of quality products
+                    at competitive prices. Our goal is to ensure customer satisfaction and provide exceptional service.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white fs-6">Home</a></li>
+                    <li><a href="Products.html" class="text-white fs-6">Our Products</a></li>
+                    <li><a href="AboutUs.html" class="text-white fs-6">About Us</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">File a Complaint</a></li>
+                    <li><a href="Support.html" class="text-white fs-6">Customer Support</a></li>
+                    <li><a href="SpecialOffers.html" class="text-white fs-6">Exclusive Offers</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>If you have any inquiries or feedback, we are here to assist you!</p>
+                <p>Email: <a href="mailto:info@DigiShop.com" class="text-white">info@DigiShop.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h5 class="text-uppercase">Need Assistance?</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="Support.html" class="text-white fs-6">Contact Customer Support</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">Submit a Complaint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons mb-4 text-center">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="my-4 border-light">
+        <p class="text-center mb-0">&copy; 2024 DigiShop. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    ScrollReveal().reveal('#carouselExample', {
+        delay: 150, 
+        duration: 600, 
+        origin: 'top',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.container', {
+        delay: 200,
+        duration: 600,
+        origin: 'left',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.container-fluid', {
+        delay: 250,
+        duration: 600,
+        origin: 'right',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.card', {
+        delay: 300,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.row', {
+        delay: 350,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('footer', {
+        delay: 400,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+</script>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>

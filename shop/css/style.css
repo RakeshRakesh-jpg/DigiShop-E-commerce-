@@ -1,0 +1,227 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar styles (Original color preserved) */
+.navbar {
+    background-color: #343a40; /* Keep the original navbar color */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    /* No color change for hover */
+}
+
+/* Banner section styling */
+.banner {
+    background-color: #333;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-title {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.banner a {
+    font-size: 1.1rem;
+}
+
+/* Card styling for product images and text */
+.card {
+    width: 100%;
+    height: 450px; /* Set a fixed height for all cards */
+    display: flex;
+    flex-direction: column; /* Align items vertically inside the card */
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card-body {
+    flex-grow: 1; /* Allow the card body to take available space */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out the content vertically */
+    text-align: center;
+}
+
+.card .product-img {
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    width: 100%; /* Ensure the image takes full width */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the product card */
+.card:hover {
+    transform: scale(1.05); /* Scale the card on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Hover effect for product image */
+.product-img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Consistent styling for card text */
+.card-body h5, .card-body p {
+    margin-bottom: 10px;
+}
+
+.card-body h5 {
+    font-size: 1.2rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+}
+
+/* Search and filter styling */
+.form-select, .form-control.search-bar {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-select {
+    width: 100%;
+    max-width: 200px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Container and row settings */
+.container {
+    padding: 20px;
+}
+
+.Products-Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    padding: 0 10px; /* Add padding between columns */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%; /* Stack columns on small screens */
+    }
+}
+
+/* Pagination styling */
+.pagination {
+    justify-content: center;
+}
+
+.page-item .page-link {
+    /* No color change for page link */
+}
+
+.page-item .page-link:hover {
+    background-color: #ffd700;
+    color: #fff;
+}
+
+/* Offcanvas Cart */
+.offcanvas-body {
+    padding: 20px;
+}
+
+.productsCart {
+    margin-bottom: 20px;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+footer .social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Custom button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.favProducts {
+    font-size: 1.5rem;
+}
+
+.favProducts:hover {
+    color: #ffd700;
+}

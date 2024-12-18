@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specify the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to Bootstrap JS bundle (includes Popper.js) for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!-- Link to Google Fonts - Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+    <!-- Link to Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="icon/icons8-home-26.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link to custom CSS stylesheet for additional styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Title of the webpage -->
+    <title>Complaints</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid mx-2">
+        <a class="navbar-brand fs-3" href="#">DigiShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-6" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="Products.html">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="SpecialOffers.html">Special Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="OurSerices.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="AboutUs.html">About Us</a>
+                </li>
+            </ul>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <span class="userNameIn fw-bold"></span>
+
+                <a href="FavoriteProducts.html" class="text-white  favProducts btn btn-danger">
+                    <i class="far fa-heart"></i>
+                </a>
+
+                <a class="btn btn-outline-dark btn-sm logInBtn" href="Login.html">Login</a>
+                <a class="btn btn-outline-dark btn-sm signInBtn" href="SignUp.html">Sign Up</a>
+
+                <a class="btn btn-outline-danger btn-sm logOutBtn" href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+
+                <div class="cart-container position-relative">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="cart btn">
+                        View Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<div class="container my-4">
+    <h1 class="text-center mb-4">Submit a Complaint</h1>
+    <form id="complaintForm" class="border p-4 rounded shadow-sm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="complaint" class="form-label">Complaint:</label>
+            <textarea id="complaint" name="complaint" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Complaint</button>
+    </form>
+
+    <div id="confirmationMessage" class="alert alert-success d-none mt-4" role="alert">
+        Thank you for your complaint! We will get back to you shortly.
+    </div>
+
+    <h2 class="mt-5">Frequently Asked Questions</h2>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">How long does it take to respond to a complaint?</a>
+        <a href="#" class="list-group-item list-group-item-action">What should I do if my complaint is urgent?</a>
+        <a href="#" class="list-group-item list-group-item-action">Can I submit a complaint anonymously?</a>
+    </div>
+
+    <h2 class="mt-5">Contact Us</h2>
+    <p>If you have any further questions, feel free to reach out to our support team:</p>
+    <ul>
+        <li>Email: DigiShopsupport@example.com</li>
+        <li>Phone: 9999 0000 11</li>
+    </ul>
+
+    <h2 class="mt-5">Useful Links</h2>
+    <ul>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="help.html">Help Center</a></li>
+    </ul>
+</div>
+<div class="container d-flex align-items-center justify-content-center py-5">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Products.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="SpecialOffers.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="OurSerices.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="AboutUs.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="ComplaintsPage.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="Support.html">6</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="productsCart">
+            <!-- Products will be injected here -->
+        </div>
+        <div class="d-grid gap-2 btn-center my-2">
+            <a href="Cart.html" class="btn btn-primary" type="button">View Products</a>
+            <button class="btn btn-danger" type="button" id="deleteAllBtn">Delete All</button>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white p-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">About Us</h5>
+                <p class="mb-0">At DigiShop, we are committed to delivering a diverse range of quality products
+                    at competitive prices. Our goal is to ensure customer satisfaction and provide exceptional service.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white fs-6">Home</a></li>
+                    <li><a href="Products.html" class="text-white fs-6">Our Products</a></li>
+                    <li><a href="AboutUs.html" class="text-white fs-6">About Us</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">File a Complaint</a></li>
+                    <li><a href="Support.html" class="text-white fs-6">Customer Support</a></li>
+                    <li><a href="SpecialOffers.html" class="text-white fs-6">Exclusive Offers</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>If you have any inquiries or feedback, we are here to assist you!</p>
+                <p>Email: <a href="mailto:info@DigiShop.com" class="text-white">info@DigiShop.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h5 class="text-uppercase">Need Assistance?</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="Support.html" class="text-white fs-6">Contact Customer Support</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">Submit a Complaint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons mb-4 text-center">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="my-4 border-light">
+        <p class="text-center mb-0">&copy; 2024 DigiShop. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    ScrollReveal().reveal('#carouselExample', {
+        delay: 150, 
+        duration: 600, 
+        origin: 'top',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true 
+    });
+
+    ScrollReveal().reveal('.container', {
+        delay: 200,
+        duration: 600,
+        origin: 'left',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.container-fluid', {
+        delay: 250,
+        duration: 600,
+        origin: 'right',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.card', {
+        delay: 300,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.row', {
+        delay: 350,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('footer', {
+        delay: 400,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+</script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

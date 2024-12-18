@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specify the character encoding for the HTML document -->
+
+    <!-- Set the viewport to make the website responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link to Bootstrap JS bundle (includes Popper.js) for interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <!-- Link to Google Fonts - Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+    <!-- Link to Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+<link rel="icon" href="icon/icons8-home-26.png" type="image/x-icon">
+<script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link to custom CSS stylesheet for additional styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Title of the webpage -->
+    <title>DigiShop</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid mx-2">
+        <a class="navbar-brand fs-3" href="#">DigiShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-6" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="Products.html">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="SpecialOffers.html">Special Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="OurSerices.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="AboutUs.html">About Us</a>
+                </li>
+            </ul>
+            <div class="ms-auto d-flex align-items-center gap-3">
+                <span class="userNameIn fw-bold"></span>
+
+                <a href="FavoriteProducts.html" class="text-white  favProducts btn btn-danger">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a class="btn btn-outline-dark btn-sm logInBtn" href="admin.html">Admin</a>
+
+                <a class="btn btn-outline-dark btn-sm logInBtn" href="Login.html">Login</a>
+                <a class="btn btn-outline-dark btn-sm signInBtn" href="SignUp.html">Sign Up</a>
+
+                <a class="btn btn-outline-danger btn-sm logOutBtn" href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+
+                <div class="cart-container position-relative">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample" class="cart btn">
+                        View Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<div id="carouselExample" class="carousel slide carousel-slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/Jorge Camacho.gif" class="d-block w-100" alt="Online Shopping Sales">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                <h5 class="display-5 display-sm-6 display-md-5 fw-bold">Shop Anytime, Anywhere</h5>
+                <p class="lead lead-sm">Unbeatable Sales and Exclusive Promotions Await You!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/ROG Phone 5s Fan ShowMatch 2022 Key Visual _ ROG x Arena.jpg" class="d-block w-100" alt="Product Packaging">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                <h5 class="display-5 display-sm-6 display-md-5 fw-bold">Stunning Product Packaging</h5>
+                <p class="lead lead-sm">Experience Excellence in Every Detail of Our Products.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/Pheidole Series By ANT PC.jpg" class="d-block w-100" alt="User Experience">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                <h5 class="display-5 display-sm-6 display-md-5 fw-bold">Seamless User Experience</h5>
+                <p class="lead lead-sm">Navigate with Ease and Enjoy Your Shopping Journey!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/e-sport concept, top view a gaming gear, mouse, keyboard, joystick, headset, mobile joystick, in ear headphone and mouse pad on black table background_.jpg" alt="Promotions">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-4 rounded">
+                <h5 class="display-5 display-sm-6 display-md-5 fw-bold">Exciting Sales Promotions</h5>
+                <p class="lead lead-sm">Grab the Best Deals and Save Big Today!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container-fluid text-center p-5 mt-4">
+    <h2 class="mb-4 fs-1 ">Discover Amazing Products</h2>
+    <p class="lead">Find the best deals and latest trends just for you.</p>
+    <a href="Products.html" class="btn btn-outline-dark btn-lg mt-3">Start Shopping Now</a>
+</div>
+<div class="container-fluid my-5">
+    <div class="row g-0">
+        <div class="col-lg-6 col-12 position-relative">
+            <img src="images/Premium Vector _  background in the concept of technology_.jpg" height="850" width="1100" class="img-fluid" alt="Service Quality">
+            <div
+                class="overlay d-flex flex-column justify-content-center align-items-center text-white text-center position-absolute top-0 start-0 w-100 h-100">
+                <h4>Service Quality</h4>
+                <p>We provide high-quality services to ensure complete customer satisfaction.</p>
+                <a href="ServiceQuality.html" class="btn btn-outline-light mt-3">Learn More</a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 position-relative">
+            <img src="images/Quick and easy loan fast money.jpg" height="650" width="730" class="img-fluid" alt="Easy Payment">
+            <div
+                class="overlay d-flex flex-column justify-content-center align-items-center text-white text-center position-absolute top-0 start-0 w-100 h-100">
+                <h4>Easy Payment</h4>
+                <p>Our platform offers flexible and easy payment options for a smooth shopping experience.</p>
+                <a href="payment.html" class="btn btn-outline-light mt-3">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mb-6">
+    <div class="row g-0">
+        <div class="col-lg-6 col-12 overflow-hidden ">
+            <img src="images/Oculus Rift S VR Headset_ Price Specs Release Date.jpg" class="img-fluid" alt="Image 1">
+        </div>
+        <div
+            class="col-lg-6 d-flex align-items-center justify-content-center flex-column bg-dark text-white text-center p-4">
+            <h2 class="mb-4">Discover Amazing Products</h2>
+            <p class="lead">Find the best deals and latest trends just for you.</p>
+            <p>Explore a wide range of quality products that fit your lifestyle and budget.</p>
+            <a href="Products.html" class="btn btn-outline-light mt-3">View Products</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5">
+    <div class="row g-0">
+        <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column bg-dark text-white p-4">
+            <h2 class="mb-4">Shop with Confidence</h2>
+            <p class="lead">Your satisfaction is our top priority.</p>
+            <p>Enjoy secure shopping and easy returns on all purchases.</p>
+            <a href="Products.html" class="btn btn-outline-light mt-3">View Products</a>
+        </div>
+        <div class="col-lg-6 col-12 overflow-hidden ">
+            <img src="images/Retailers Want My Dollar—Even in a Pandemic.jpg" class="img-fluid" alt="Image 2">
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5">
+    <div class="row g-0">
+        <div class="col-lg-6 col-12 overflow-hidden">
+            <img src="images/MSI X HYTE Gaming PC.jpg" class="img-fluid" alt="Image 1">
+        </div>
+        <div
+            class="col-lg-6 d-flex align-items-center justify-content-center flex-column bg-dark text-white text-center p-4">
+            <h2 class="mb-4">Unleash the Power of Technology</h2>
+            <p>From smartphones to home appliances, find everything you need in one place.</p>
+            <a href="Products.html" class="btn btn-outline-light mt-3">View Products</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5">
+    <div class="row g-0">
+        <div
+            class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column bg-dark text-white p-4 text-center">
+            <h2 class="mb-4">Quality You Can Trust</h2>
+            <p>Experience secure shopping, fast delivery, and dedicated customer support.</p>
+            <a href="Products.html" class="btn btn-outline-light mt-3">View Products</a>
+        </div>
+        <div class="col-lg-6 col-12 overflow-hidden">
+            <img src="images/lEnOvO_ShOp.jpg" class="img-fluid" alt="Image 2">
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    What payment methods do you accept?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    We accept various payment methods including credit cards, PayPal, and bank transfers.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How long does shipping take?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Shipping typically takes 3-5 business days depending on your location.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I return a product?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes, you can return products within 30 days of purchase for a full refund.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-light text-center py-5 ">
+    <h2 class="mb-4">What Our Customers Say</h2>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <blockquote class="blockquote">
+                    <p class="mb-4">"The best shopping experience I've had! The products are top-notch and delivery was
+                        super fast!"</p>
+                    <footer class="blockquote-footer">Shiva</footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote">
+                    <p class="mb-4">"Amazing quality and great customer service. I will definitely shop here again!"</p>
+                    <footer class="blockquote-footer">Suchitra</footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item">
+                <blockquote class="blockquote">
+                    <p class="mb-4">"The prices are unbeatable, and the selection is fantastic. Highly recommended!"</p>
+                    <footer class="blockquote-footer">Sumanth</footer>
+                </blockquote>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="container-fluid bg-light py-5">
+    <h2 class="text-center mb-5">Why Shop With Us?</h2>
+    <div class="row text-center">
+        <div class="col-lg-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-shield-check fs-1 text-primary mb-3"></i>
+                    <h5 class="card-title">Secure Shopping</h5>
+                    <p class="card-text">Your privacy and security are our top priorities. Shop with confidence knowing
+                        your data is safe.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-truck fs-1 text-primary mb-3"></i>
+                    <h5 class="card-title">Fast Delivery</h5>
+                    <p class="card-text">Get your orders delivered to your doorstep in record time, ensuring a smooth
+                        and efficient shopping experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-arrow-repeat fs-1 text-primary mb-3"></i>
+                    <h5 class="card-title">Easy Returns</h5>
+                    <p class="card-text">Our easy return policy lets you return any product hassle-free within 30 days
+                        of purchase.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container d-flex align-items-center justify-content-center py-5">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Products.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="SpecialOffers.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="OurSerices.html">4</a></li>
+            <li class="page-item"><a class="page-link" href="AboutUs.html">5</a></li>
+            <li class="page-item"><a class="page-link" href="Support.html">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="productsCart">
+            <!-- Products will be injected here -->
+        </div>
+        <div class="d-grid gap-2 btn-center my-2">
+            <a href="Cart.html" class="btn btn-primary" type="button">View Products</a>
+            <button class="btn btn-danger" type="button" id="deleteAllBtn">Delete All</button>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white p-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">About Us</h5>
+                <p class="mb-0">At DigiShop, we are committed to delivering a diverse range of quality products
+                    at competitive prices. Our goal is to ensure customer satisfaction and provide exceptional service.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white fs-6">Home</a></li>
+                    <li><a href="Products.html" class="text-white fs-6">Our Products</a></li>
+                    <li><a href="AboutUs.html" class="text-white fs-6">About Us</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">File a Complaint</a></li>
+                    <li><a href="Support.html" class="text-white fs-6">Customer Support</a></li>
+                    <li><a href="SpecialOffers.html" class="text-white fs-6">Exclusive Offers</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>If you have any inquiries or feedback, we are here to assist you!</p>
+                <p>Email: <a href="mailto:info@DigiShop.com" class="text-white">info@DigiShop.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h5 class="text-uppercase">Need Assistance?</h5>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="me-4"><a href="Support.html" class="text-white fs-6">Contact Customer Support</a></li>
+                    <li><a href="ComplaintsPage.html" class="text-white fs-6">Submit a Complaint</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-icons mb-4 text-center">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="my-4 border-light">
+        <p class="text-center mb-0">&copy; 2024 DigiShop. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    ScrollReveal().reveal('#carouselExample', {
+        delay: 150,
+        duration: 600, 
+        origin: 'top',
+        distance: '20px', 
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true 
+    });
+
+    ScrollReveal().reveal('.container', {
+        delay: 200,
+        duration: 600,
+        origin: 'left',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.container-fluid', {
+        delay: 250,
+        duration: 600,
+        origin: 'right',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.card', {
+        delay: 300,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('.row', {
+        delay: 350,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+
+    ScrollReveal().reveal('footer', {
+        delay: 400,
+        duration: 600,
+        origin: 'bottom',
+        distance: '20px',
+        opacity: 0,
+        scale: 0.95,
+        easing: 'ease-in-out',
+        reset: true
+    });
+</script>
+    <!-- Link to the main JavaScript file for interactivity -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "ASUS ROG Strix G16 ",
+        "price":159990,
+        "description": " 90WHr Battery, Intel Core i9-13980HX 13th Gen, 16",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/71xC5f0AWIL._AC_UL480_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.5,
+            "count": 350
+        }
+    },
+    {
+        "id": 2,
+        "title": "ZEBRONICS New Launch Juke BAR 9900",
+        "price": 29999,
+        "description": "Juke BAR 9900, 725 Watts, Karaoke UHF Mic, Dolby Atmos, DTS X, 7.2.2 (5.2.4) Surround Soundbar with Dual Wireless Subwoofer & Satellites, HDMI eARC, Optical in, RGB LED",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/71SwuatflqL._SX522_.jpg",
+        "rating": {
+            "rate": 4.3,
+            "count": 500
+        }
+    },
+    {
+        "id": 3,
+        "title": "Samsung Galaxy S23 Ultra 5G ",
+        "price": 75999,
+        "description": "AI Smartphone (Cream, 12GB, 256GB Storage)",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/41Z2gCkqEUL._SX300_SY300_QL70_FMwebp_.jpg",
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    },
+    {
+        "id": 4,
+        "title": "Gaming Laptop",
+        "price": 1499.99,
+        "description": "A high-end gaming laptop with a powerful GPU and fast refresh rate display.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/61LOOMpEgxL._AC_UY327_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 200
+        }
+    },
+    {
+        "id": 5,
+        "title": "Drone 4K",
+        "price": 999.99,
+        "description": "A lightweight drone capable of capturing stunning 4K aerial footage.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/51i+SECBGPL._AC_UL480_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 150
+        }
+    },
+    {
+        "id": 6,
+        "title": "Portable Charger",
+        "price": 499,
+        "description": "A high-capacity portable charger for keeping your devices powered on the go.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/61lIsVNSllL._AC_UY327_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.4,
+            "count": 800
+        }
+    },
+    {
+        "id": 7,
+        "title": "Bluetooth Speaker",
+        "price": 3499,
+        "description": "A waterproof Bluetooth speaker with rich sound and deep bass.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/71isiSO138L._AC_UY327_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.6,
+            "count": 600
+        }
+    },
+    {
+        "id": 8,
+        "title": "Action Camera",
+        "price": 16999,
+        "description": "A rugged action camera perfect for capturing adventures in high definition.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/41cLrYrg1fL._AC_UY327_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 250
+        }
+    },
+    {
+        "id": 9,
+        "title": " Headset",
+        "price": 3500.99,
+        "description": "An immersive virtual reality headset for gaming and entertainment.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/61F5SXdi9jL._AC_UY327_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.5,
+            "count": 300
+        }
+    },
+    {
+        "id": 10,
+        "title": "Smart Home Assistant",
+        "price": 6999,
+        "description": "A smart home assistant that helps control your smart devices and answers queries.",
+        "category": "gadgets",
+        "image": "https://m.media-amazon.com/images/I/81lGxS2ZisL._AC_UL480_FMwebp_QL65_.jpg",
+        "rating": {
+            "rate": 4.2,
+            "count": 700
+        }
+    }
+]
